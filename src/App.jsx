@@ -8,11 +8,23 @@ import Index from "./pages/Index.jsx";
 import SearchResults from "./pages/SearchResults.jsx";
 import Booking from "./pages/Booking.jsx";
 
+const queryClient = new QueryClient(); // Ensure this is declared before use
+
 export const navItems = [
   {
     title: "Home",
     to: "/",
     icon: <Home className="h-4 w-4" />,
+  },
+  {
+    title: "Search",
+    to: "/search",
+    icon: <Search className="h-4 w-4" />,
+  },
+  {
+    title: "Booking",
+    to: "/booking",
+    icon: <BookOpen className="h-4 w-4" />,
   },
 ];
 
